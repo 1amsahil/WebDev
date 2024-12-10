@@ -1,0 +1,19 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    background-image: url("/CWH/Project_Netflix/assets/images/background.jpg");
+    height: 80vh;
+}
+
+main .box
+{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.45;
+    background-color: black;
+}
