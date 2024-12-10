@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Basic Info</legend>
+
+            <label for="n">Name :</label>
+            <input type="text" id="n"><br>
+
+            <label for="age">Age :</label>
+            <input type="number" id="age" min="18" max="23">
+            <br>
+            
+            <label>Gender :</label>
+            <input type="radio" name="gender" id="gen"><label for="gen">Male</label>
+            <input type="radio" name="gender" id="gen"><label for="gen">Female</label>
+            <input type="radio" name="gender" id="gen"><label for="gen">Other</label>
+            <br>
+
+            <label>Language :</label>
+            <input type="checkbox" id="j"><label for="j">Java</label>
+            <input type="checkbox" id="c"><label for="c">C++</label>
+            <input type="checkbox" id="p"><label for="p">Python</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Other Info</legend>
+            <label for="enroll">Enrollment :</label>
+            <input type="number" id="enroll">
+            <br>
+
+            <label for="course">Course :</label>
+            <input type="text" id="course" list="cou">
+            
+            <datalist id="cou">
+                <option value="Btech"></option>
+                <option value="BCA"></option>
+                <option value="BCom"></option>
+            </datalist>
+        </fieldset>
+        <input type="submit" name="Submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
