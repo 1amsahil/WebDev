@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+body
+{
+    background-color: rgb(229, 229, 229) ;
+}
+
+.card
+{
+ 
+    display: inline-block;
+    
+    width: 300px;
+
+    padding: 8px;
+    margin: 10px 600px;
+
+    border-radius: 15px;
+    border: 1px solid whitesmoke;
+
+    background-color: whitesmoke;
+}
+
+.image img
+{
+    border-radius: 15px;
+}
+
+.capsule
+{
+    margin-top: 20px;
+}
+
+.tag
+{
+
+    padding: 3px 10px;
+    margin: 3px;
+
+    font-size: 15px;
+
+    color: rgb(128, 128, 128);
+
+    border: 1px solid darkgrey ;
+    border-radius: 15px;
+}
+.tag:hover
+{
+
+    padding: 3px 10px;
+    margin: 3px;
+
+    font-size: 15px;
+
+    background-color:  rgb(229, 229, 229);
+    color:darkslategrey;
+
+    border: 1px solid rgb(104, 104, 104) ;
+    border-radius: 15px;
+}
+
+.description h2
+{
+    margin:15px 3px;
+
+    font-size: 22px;
+    font-weight: 600;
+    
+
+    color: rgb(82, 82, 82);
+}
+
+.description p
+{
+    margin: 15px 5px;
+    
+
+    color: rgb(128, 128, 128);
+    
+    font-size: 15px;
+
+    
+    line-height: 1.25;
+}
+
+.button
+{
+    margin: 10px 80px;
+}
+
+.button label
+{
+
+    padding: 8px 10px;
+
+    border: 2px solid none;
+    border-radius: 18px;
+
+    background-color:rgb(192, 224, 235);
+    color: cornflowerblue;
+
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.button label:hover
+{
+    
+    color: rgba(62, 62, 167, 0.927);
+
+    text-decoration: underline;
+    text-decoration-color: rgba(62, 62, 167, 0.927);
+
+}

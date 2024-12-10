@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.Box
+{
+    background-color:lightgoldenrodyellow;
+}
+
+.Box1
+{
+    color: darkcyan;
+    height: 200px;
+    border: 10px solid burlywood;
+    padding: 100px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.Box2
+{
+    color: cornflowerblue;
+    border: 10px solid burlywood;
+    padding: 10px;
+    margin: 30px;
+}

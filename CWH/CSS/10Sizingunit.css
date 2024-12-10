@@ -1,0 +1,62 @@
+
+body
+{
+    background-color: blanchedalmond;
+}
+
+#head
+{
+    font-size: 50px;
+
+    text-align: center;
+    
+    text-decoration: underline;
+    text-decoration-color: darkorange;
+
+    color: royalblue;
+
+}
+
+#list
+{
+    background-color:white;
+    color:darkgreen;
+    
+    font-size: 20px;
+    
+    margin: 10px 150px;
+    padding: 20px 50px;
+    
+    border: 4px solid darkorange;
+    border-radius: 20px;
+}
+
+h4
+{
+    font-size: 20px;
+    margin: 0 100px;
+}
+
+#cont
+{
+    background-color:white;
+    color:darkgreen;
+    
+    font-size: 20px;
+    
+    margin: 10px 150px;
+    padding: 20px 50px;
+    
+    border: 4px solid darkorange;
+    border-radius: 20px;
+}
+
+#inCon
+{
+    box-sizing: border-box;
+
+    font-size: 2em;
+
+    border: 3px solid red;
+    border-radius: 20px;
+}

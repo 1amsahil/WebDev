@@ -1,0 +1,27 @@
+*
+{
+    padding: 0;
+    margin: 0;
+
+}
+
+:root
+{
+    --color: blanchedalmond ;
+    --seccolor: whitesmoke;
+}
+
+body
+{
+    background-color: var(--color) ;
+}
+
+.nav
+{
+    display: flex;
+
+    list-style: none;
+
+    background-color: var(--seccolor);
+
+}

@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: bisque;
+}
+
+.content
+{
+    height: 40vh;
+    border: 2px solid black;
+
+    /* (main axis) (cross axis) */
+
+    display: flex;
+    
+    /* There is no justify-item; */
+    justify-content: center;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-end; */
+
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: first baseline; */
+    /* align-items: end; */
+    /* align-items: start; */
+    /*  we use align-content, if lines are more than one*/
+    align-content: center;
+
+    
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    
+    /* flex-flow help to set the both flex-direction and flex-wrap respectively*/
+    flex-flow: column wrap;
+    /* flex-flow: column-reverse wrap; */
+    /* flex-flow: row wrap; */
+    /* flex-flow: row-reverse wrap; */
+
+    row-gap: 10px;
+    column-gap: 5px;
+    /* gap: row column; */
+    gap: 10px 5px;
+
+}
+
+.items
+{
+
+    height: 80px;
+    width: 80px;
+
+    background-color: rgb(94, 85, 189);
+
+}
+
+.order-1
+{
+    order: 1;
+}
+
+
+/* New Content  */
+
+.newcontent
+{
+    height: 40vh;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+
+    flex-flow: row wrap;
+    
+    gap: 10px 5px;
+
+}
+
+
+.newitems
+{
+    /* flex-grow: 1; */
+    
+    height: 80px;
+    width: 80px;
+    
+    background-color: rgb(94, 85, 189);
+    
+}
+
+.item1
+{
+    flex-grow: 3;
+
+    /* but remove flex-wrap:wrap */
+    flex-shrink: 4;
+
+    /* align-content must be commented */
+    align-self: flex-end;
+}

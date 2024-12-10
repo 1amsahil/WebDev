@@ -1,0 +1,14 @@
+body
+{
+    background-color:bisque;
+}
+
+#box
+{
+    margin-bottom: 15px ;
+    
+    border: 2px solid black;
+    
+    outline: 2px solid black;
+    outline-offset: 12px;
+}

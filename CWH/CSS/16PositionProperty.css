@@ -1,0 +1,95 @@
+/* Position Properties */
+
+/* 1.)Relative */
+        /* Elements are positioned relative to the normal position in the document. */
+        /* You can use the top, right, bottom, and left properties to move the element from its original position. */
+
+/* 2.)Absolute */
+        /* Elements are positioned relative to the closest positioned ancestor (parent), which means we need to have a parent element with a positioning other than 'static'. */
+
+/* 3.)Fixed */
+        /* Elements are positioned relative to the viewport (screen) and do not move when the page is scrolled. */
+        /* This is useful for creating elements like fixed headers or footers. */
+
+/* 4.)Sticky */
+        /* Position sticky is a hybrid between 'relative' and 'fixed'. */
+        /* It allows an element to become "stuck" to the top or bottom of its container when scrolling, but it behaves like relative positioning within the container until it reaches a specified offset. */
+
+/* z-index: 1; 
+        it is used to highlight the element */
+
+/*////////////////////////////////// Important Pointt //////////////////////////////////*/
+/* Transform, Filter and Perspective Properties can also make element appear as positioned  */
+
+
+body
+{
+    background-color: bisque;
+}
+
+.box
+{
+    border: 2px solid none;
+    border-radius: 20px;
+
+    font-size: 40px;
+
+    height: 60vh;
+    width: 80vw;
+
+}
+
+.box1
+{
+    background-color:royalblue; 
+    
+    
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    width: 100%;
+    height: 10vh ;
+    
+    padding: 0px;
+    margin: 0;
+    
+    text-align: center;
+}
+
+.box2
+{
+    background-color:cadetblue;
+    
+    /* position: absolute;
+    top: 0px;
+    left: 100px;
+     */
+}
+
+.box3
+{
+    background-color: crimson;
+    
+    /* position: fixed;
+    bottom: 0px;
+    right: 0px; */
+    
+}
+
+.box4
+{
+    background-color: darkgrey;
+    
+    position: relative;
+    top: 10px;
+    left: 100px;
+    
+}
+
+#parent
+{
+    position: relative; 
+   border: 10px solid whitesmoke;
+
+}

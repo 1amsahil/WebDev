@@ -1,0 +1,31 @@
+body
+{
+    background-color: cadetblue;
+}
+
+
+.box
+{
+    background-color:cornflowerblue;
+    
+    height: 100px;
+    width: 100px;
+
+    color: azure;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition-property: transform ;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+
+    transition: transform 3s ease 1s;
+}
+
+.transition
+{
+    transform: translate(400px,250px);
+}

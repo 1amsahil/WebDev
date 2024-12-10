@@ -1,0 +1,201 @@
+
+@media only screen and (min-width:0px) and (max-width : 500px) 
+{
+    header
+    {
+        display: block;
+
+    }
+
+    .navbar
+    {
+        
+        margin-top: -40px;
+        margin-left: 20px;
+        
+        align-items: center;
+        justify-content: center;
+
+        column-gap: 20px;
+
+    }
+
+    .navbar li
+    {
+        font-size: 10px;
+    
+    }
+   
+    .logo
+    {
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    main
+    {
+        grid-template-rows: 100px 40px 90px 1400px;
+    }
+    
+    .UE-Download h3
+    {
+        
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .UE-Download img
+    {
+        margin-left:10px;
+        width: 80px;
+    }
+    
+    
+    .UE-sub
+    {
+        font-size: 12px;
+    }
+
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+}
+
+@media only screen and (min-width:500px) and (max-width : 990px) 
+{
+    header
+    {
+        display: block;
+    }
+
+    .navbar
+    {
+        
+        margin-top: -40px;
+        margin-left: 20px;
+        
+        align-items: center;
+        justify-content: center;
+
+        column-gap: 20px;
+
+    }
+
+    .navbar li
+    {
+        font-size: 15px;
+    
+    }
+   
+    .Mlogo
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    main
+    {
+        grid-template-rows:100px 40px 90px 1000px;
+    }
+    
+    .UE-Download h3
+    {
+        
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .UE-Download img
+    {
+        margin-left:10px;
+        width: 80px;
+    }
+    
+    
+    .UE-sub
+    {
+        font-size: 15px;
+    }
+
+    .content
+    {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        align-items: center;
+        justify-self:center ;
+        
+    }
+
+    .block
+    {
+        background-color: rgb(245, 245, 245);
+        border-radius: 5px;
+
+        height: 100px;
+
+        text-align: center;
+        padding-top: 60px;
+    }
+    
+}
+
+@media only screen and (min-width:990px) and (max-width:1130px)
+{
+
+    header
+    {
+        display: flex;
+        column-gap: 20px;
+    }
+}
+
+@media only screen and (min-width:1130px) and (max-width:1300px)
+{
+
+    header
+    {
+        display: flex;
+        column-gap: 150px;
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width:1650px)
+{
+
+    header
+    {
+        display: flex;
+        column-gap: 400px;
+    }
+}
+
+@media only screen and (min-width:1650px) and (max-width:1800px)
+{
+
+    header
+    {
+        display: flex;
+        column-gap: 600px;
+    }
+}
+@media only screen and (min-width:1800px) and (max-width:2300px)
+{
+
+    header
+    {
+        display: flex;
+        column-gap: 800px;
+    }
+}

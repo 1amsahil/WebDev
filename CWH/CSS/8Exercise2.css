@@ -1,0 +1,12 @@
+p:first-child
+{
+    background-color:blanchedalmond;
+    color: rgb(255, 0, 0);
+}
+
+div>p
+{
+    background-color: cornflowerblue;
+    color: azure;
+}
+

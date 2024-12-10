@@ -1,0 +1,70 @@
+
+
+body
+{
+    background-color: bisque;
+}
+
+/* More Selectors */
+
+
+/* first-child Selector */
+.box:first-child
+{
+    background-color: crimson;
+}
+
+
+/* first-line selector */
+.box1:first-line
+{
+    background-color:cornflowerblue;
+}
+
+
+/* [] selector */
+[one="primary"]
+{
+    background-color:azure;
+}
+
+
+/* nth-child(odd/even/number) selector */
+.box:nth-child(odd)
+{
+    background-color: blueviolet;
+}
+
+
+/* nth-last-child(number) selector */
+.box:nth-last-child(2)
+{
+    background-color: cadetblue;
+}
+
+
+/* Elements */
+
+/* before And After Pseudo-Elements */
+.boxes::before
+{
+    content: "This is a (before) First Line";
+    color: blue;
+}
+
+.boxes::after
+{
+    content: "This is an (after) Last Line";
+    color: red;
+}
+
+::selection
+{
+    color: aqua;
+   background-color: black;
+}
+
+input::placeholder
+{
+    color:darkslateblue;
+}
