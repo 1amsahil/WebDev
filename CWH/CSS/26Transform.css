@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;padding: 0;
+}
+
+body
+{
+    background-color:rgb(1, 1, 103);
+    
+}
+
+.container
+{
+    margin: 15px;  
+    height: 96vh;
+    width: 98%;
+    box-sizing: border-box;
+
+    border: 3px solid crimson;
+
+    display: grid;
+    grid-template-columns: repeat(4,100px); 
+    grid-template-rows: repeat(3,100px) ;
+
+    gap: 20px 20px;
+
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.box
+{
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+
+
+    height: 60px;
+    width: 70px;
+    
+    background-color:azure;
+    
+    border: 2px solid azure;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Transform */
+
+/* Rotate */
+.box1:hover
+{    
+    transform-origin: 50; /*initial point is 50*/
+    transform: rotate(60deg);
+    transition: 0.5s ease;
+}
+.box2:hover
+{
+    transform: rotateX(70deg);
+    transition: 0.5s ease;
+}
+.box3:hover
+{
+    transform: rotateY(75deg);
+    transition: 0.5s ease;
+}
+.box4:hover
+{
+    transform: rotateZ(75deg);
+    transition: 0.5s ease;
+}
+
+/* Scale */
+.box5:hover
+{
+    transform: scale(1.25);
+    transition: 0.5s ease;
+}
+.box6:hover
+{
+    transform: scaleX(1.15);
+    transition: 0.5s ease;
+}
+.box7:hover
+{
+    transform: scaleY(1.15);
+    transition: 0.5s ease;
+}
+
+/* Skew */
+.box8:hover
+{
+    transform: skew(10deg);
+    transition: 0.5s ease;
+}
+.box9:hover
+{
+    transform: skewX(15deg);
+    transition: 0.5s ease;
+}
+.box10:hover
+{
+    transform: skewY(15deg);
+    transition: 0.5s ease;
+}
+
+/* Translate */
+.box11:hover
+{
+    transform: translate(80px,40px);
+    transition: 0.8s ease;
+}
+.box12:hover
+{
+    transform: translateX(80px);
+    transition: 0.5s ease;
+}
+.box13:hover
+{
+    transform: translateY(100px);
+    transition: 0.5s ease;
+}

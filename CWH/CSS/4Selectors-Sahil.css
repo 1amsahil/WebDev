@@ -1,0 +1,84 @@
+/* Selectors Types:- */
+/* There are of 3 Types :- 
+    1.) Element Selctor
+    2.) Class Selctor
+    3.) Id Selctor
+    4.) Child Selector
+    5.) Descendent Selector
+    6.) Universal Selector
+    7.) Pseudo Selector
+    8.) Group Selector
+    */
+    
+    
+/* 1.) Element Selctor */
+    label
+    {
+        color:darkcyan;
+    }
+    
+/* 2.) Class Selctor */
+    .button
+    {
+        background-color: antiquewhite;
+        border-radius: 30px;
+    }
+    
+/* 3.) Id Selctor */
+    #user
+    {
+        color: crimson;
+    }
+    
+/* 4.) Child Selector */
+    div > p
+    {
+        color:steelblue;
+    }
+    
+/*5.) Descedent Selector*/
+    div h3
+    {
+        color: azure;
+        background-color: black;
+    }
+
+/* 6.) Universal Selector
+    *
+    {
+        margin: 0;
+        padding: 0; 
+    }
+*/
+    
+/* 7.) Pseudo Selector */
+   
+    #one:visited
+    {
+        color: blueviolet; 
+    }
+
+    #two:link
+    {
+        color:orange;
+    }
+
+    #three:active
+    {
+        color: rgb(255, 0, 51);
+    }
+
+    #three:hover
+    {
+        background-color:bisque;
+    }
+
+    #zero:first-child
+    {
+        color:cadetblue;
+    }
+/* 8.) Group Selector */
+    span,article
+    {
+        color: deeppink;
+    }

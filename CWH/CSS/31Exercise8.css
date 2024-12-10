@@ -1,0 +1,75 @@
+.container
+{
+    height: 80vh;
+    width: 80vw;
+
+    background-color: royalblue;
+    
+}
+
+.ball
+{
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+    left: 0;
+    bottom: 125px;
+
+    background-color: red;
+
+    border-radius: 50px;
+
+    animation-name: Eternity;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+}
+
+@keyframes Eternity
+{
+    0%
+    {
+        transform: translate(0vw, -65vh);
+    }
+
+    15%
+    {
+        transform: translate(10vw, 0vh);
+    }
+
+    30%
+    {
+        transform: translate(20vw, -50vh);
+    }
+
+    45%
+    {
+        transform: translate(30vw, 0vh);
+    }
+
+    60%
+    {
+        transform: translate(40vw, -40vh);
+    }
+
+    75%
+    {
+        transform: translate(50vw, 0vh);
+    }
+
+    90%
+    {
+        transform: translate(60vw, -30vh);
+    }
+
+    100%
+    {
+        transform: translate(65vw, 0vh);
+    }
+
+
+}

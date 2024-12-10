@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    column-gap: 270px;
+}
+
+.navbar
+{
+    height: 90px;
+    display: flex;
+    column-gap: 35px;
+
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+}
+
+.navbar a
+{
+    color: rgb(56, 56, 56);
+}
+
+.navbar :hover
+{
+    text-decoration: underline;
+    text-decoration-color: rgb(56, 56, 56);
+}
+
+.logo
+{
+    margin: 20px 118px;
+    height: 56px;
+}
+
+main
+{
+    display: grid;
+
+    grid-template-rows: 170px 90px 60px 800px;
+}
+
+.UE-Download
+{
+    grid-row: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UE-Download h3
+{
+    margin-top: -10px;
+    margin-left: 35px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.UE-Download img
+{
+    margin-left: 20px;
+    width: 120px;
+}
+
+.UE-sub
+{
+    width: 70vw;
+
+    grid-row: 2;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+
+    text-align: center;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.mac-linux 
+{
+    grid-row: 3;
+    
+    align-self: center;
+    justify-self: center;
+}
+
+.mac-linux a
+{
+    padding: 10px;
+
+    color: aliceblue;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    border-radius: 5px;
+
+    background-color: cadetblue;
+}
+
+.content
+{
+    grid-area: 4;
+
+    display: grid;
+
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 250px 250px 250px;
+
+    align-content: center;
+    justify-content: center;
+    
+    gap: 20px 30px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block
+{
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+
+    text-align: center;
+    padding-top: 60px;
+}
+
+.block a
+{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 5px;
+    
+
+    color: azure;
+    background-color: cadetblue;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.block .second
+{
+    background-color: cornflowerblue;
+}
+
+
+

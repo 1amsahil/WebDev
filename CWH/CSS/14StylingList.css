@@ -1,0 +1,14 @@
+body
+{
+    background-color:bisque;
+}
+
+nav ul li
+{
+    list-style: none;
+    list-style-position: inside;
+    list-style-type: "🤡";
+    list-style-image: url("https://img.lovepik.com/element/40116/9419.png_300.png");
+
+    list-style: disc inside url("https://img.lovepik.com/element/40116/9419.png_300.png");
+} 

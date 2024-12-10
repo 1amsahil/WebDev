@@ -1,0 +1,19 @@
+body
+{
+    background-color:bisque;
+}
+
+#box
+{
+    margin-bottom: 15px ;
+    
+    border: 2px solid black;
+    
+    box-shadow: 5px 5px 15px 5px brown ;
+}
+
+#txt
+{
+    border: 2px solid black;
+    text-shadow: 5px 10px 3px black  ;
+}

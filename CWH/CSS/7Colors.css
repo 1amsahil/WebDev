@@ -1,0 +1,44 @@
+body
+{
+    background-color: antiquewhite;
+}
+
+#head
+{
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: cadetblue;
+    text-decoration-thickness: 10px ;
+    
+}
+
+#colorkey
+{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+#hex
+{
+    font-size: 20px;
+    color: #214685;    
+}
+
+#rgb
+{
+    font-size: 20px;
+    color: rgb(196, 7, 155);
+}
+
+#rgba
+{
+    font-size: 20px;
+    color: rgba(234, 144, 45, 0.9);
+}
+
+#hsl
+{
+    font-size: 20px;
+    color: hsl(147, 100%, 18%);
+}
