@@ -1,35 +1,32 @@
 
-// let ran = Math.random();
-// console.log(ran);
+let ran = Math.random();
+console.log(ran);
 
-// alert(1+2)
+alert("Faulty Calculator")
 
-// let a = prompt("Enter a Number : ")
-// let c = prompt("Operator : ")
-// let b = prompt("Enter a Number : ")
+let a = prompt("Enter a Number : ")
+let c = prompt("Operator : ")
+let b = prompt("Enter a Number : ")
 
-// let obj = {
-//     "+" : "*",
-//     "-" : "/",
-// };
+let obj = {
+    "+" : "*",
+    "-" : "/",
+};
 
-// if(ran > 0.35)
-// {
-//     console.log("${a} ${c} ${b}");
-//     result = eval('${a} ${c} ${b}');
-//     alert(result);
-// }
-// else
-// {
-//     c = obj[c]
+if(ran > 0.35)
+{
+    console.log("${a} ${c} ${b}");
+    result = eval(`${a} ${c} ${b}`);
+    alert(result);
+}
+else
+{
+    c = obj[c]
 
-//     console.log('${a} ${c} ${b}');
-//     result = eval('${a} ${c} ${b}');
-//     alert(result);
-// }
+    console.log(`${a} ${c} ${b}`);
+    result = eval(`${a} ${c} ${b}`);
+    alert(result);
+}
 
-
-let a = 7;
-console.log("The result is ${a}");
 
 
