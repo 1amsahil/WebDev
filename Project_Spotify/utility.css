@@ -1,0 +1,50 @@
+.red-border
+{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.justify-c
+{
+    justify-content: center;
+}
+
+.align-i
+{
+    align-items: center;
+}
+
+.invert
+{
+    filter: invert(1);
+}
+
+.bg-black
+{
+    background-color: black;
+    color: white;
+}
+
+.bg-grey
+{
+    background-color: #121212;
+    color: white;
+}
+.rounded
+{
+    border-radius: 10px;
+}
+
+.m-1
+{
+    margin: 10px;
+}
+.p-1
+{
+    padding: 5px;
+}
