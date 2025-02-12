@@ -16,15 +16,20 @@ body
 
 .left
 {
-    width: 25vw;
-    padding: 10px;
+    width: 27vw;
+    margin: 15px 5px;
+}
+
+.home
+{
+    margin-bottom: 10px;
 }
 
 .home ul li
 {
     width: 20px;
 
-    padding: 15px;
+    padding: 10px;
 
     list-style: none;
     
@@ -47,6 +52,7 @@ body
     font-size: 10px;
     font-weight: 300;
 }
+
 .heading img
 {
     width: 20px;
@@ -67,9 +73,9 @@ body
     font-size: 12px;
 
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
 
-    padding: 10px;
+    padding: 50px 15px;
 }
 
 .left-footer a
@@ -83,5 +89,93 @@ body
 .right
 {
     width: 75vw;
+    margin: 15px 5px;
 }
 
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgb(10, 10, 10);
+
+    height: 50px;
+}
+
+.header > *
+{
+    padding-right: 10px;   
+}
+
+.button .login
+{
+    width: 80px;
+
+    padding: 10px 5px;
+    margin: 5px;
+
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 70px;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.button .signup
+{
+    width: 80px;
+
+    padding: 10px 5px;
+    margin: 5px;
+
+    background-color: rgb(10, 10, 10);
+    color: grey;
+
+    border: none;
+    border-radius: 70px;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.spotify-playlist
+{
+    padding: 15px;
+}
+
+.card-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    /* border: 5px solid white; */
+    width: 200px;
+
+    margin: 15px;
+    padding: 15px;
+
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+}
+
+.card p
+{
+    font-size: 13px;
+    color: grey;
+}
+
+.card .thumbnail
+{
+    width: 200px;
+    height: 250px;
+
+    object-fit: cover;
+}
