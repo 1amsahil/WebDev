@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>Event Bubbling</title>
+
+        <style>
+
+            .child
+            {
+                border: 2px solid none;
+                padding: 40px;
+                
+                background-color: azure;
+                text-align: center;
+
+                font-size: 30px;
+
+            }
+            .childContainer
+            {
+                border: 2px solid none;
+                border-radius: 10px;
+                padding: 40px;
+                
+                background-color: bisque;
+            }
+            .container
+            {
+                border: 2px solid none;
+                border-radius: 10px;
+                
+                margin: 45px;
+                padding: 40px;
+
+                background-color: burlywood;
+            }
+
+        </style>
+    
+    </head>
+    
+    <body>
+
+        <div class="container">
+            <div class="childContainer">
+                <div class="child">Initial Text</div>
+            </div>
+        </div>
+
+        <script src="15EventBubbling.js"></script>
+    </body>
+
+</html>

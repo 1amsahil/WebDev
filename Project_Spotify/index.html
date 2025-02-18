@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="utility.css">
+        <title>Spotify</title>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        
+        <div class="container flex bg-black">
+
+            <!-- left side Structure -->
+
+            <div class="left bg-black">
+                <div class="left-upper bg-grey rounded ">
+                    <div class="logo">
+                        <img src="svg/logo.svg" alt="logo" height="80px">
+                    </div>
+
+                    <ul>
+                        <li class="home-icon"><img class="invert" src="svg/home.svg" alt="home">Home</li>
+                        <li class="search-icon"><img class="invert" src="svg/search.svg" alt="search">Search</li>
+                    </ul>
+                </div>
+
+                <div class="left-lower bg-grey rounded">
+                    
+                    <div class="library ">
+                        <img class="invert" src="svg/library.svg" alt="library">
+                        <h2>
+                            <label>Your library</label>
+                        </h2>
+                    </div>
+
+                    <div class="song-list">        
+                        <!-- JS Song Added -->
+                        <ul></ul>
+                    </div>
+
+                </div>
+
+                <!-- <div class="left-footer">
+                    <div class="legal"><a href=""><span>legal</span></a></div>
+                    <div class="privacy-center"><a href=""><span>privacy and center</span></a></div>
+                    <div class="privacy-policy"><a href=""><span>privacy policy</span></a></div>
+                    <div class="about-ads"><a href=""><span>about ads</span></a></div>
+                </div> -->
+
+            </div>
+
+            <!-- Right Side Structure -->
+
+            <div class="right bg-grey rounded ">
+                
+                <div class="right-header">
+                    <div class="nav">
+                        <svg width="20px" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="20px" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="button">
+                        <button class="signup-btn">Sign up</button>
+                        <button class="login-btn">Log in</button>
+                    </div>
+                </div>
+                
+                <!-- Main Content  -->
+                
+                <div class="spotify-playlist scrollbar">
+                    <h2> <label>Spotify Playlist</label></h2>
+                    
+                    <div class="card-container">
+
+                        <div class="card">
+                            <img src="img/music.jpeg" alt="" class="thumbnail">
+                            <!-- play button -->
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/music.jpeg" alt="" class="thumbnail">
+                            <!-- play button -->
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/music.jpeg" alt="" class="thumbnail">
+                            <!-- play button -->
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/music.jpeg" alt="" class="thumbnail">
+                            <!-- play button -->
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/music.jpeg" alt="" class="thumbnail">
+                            <!-- play button -->
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="playbar">
+    
+                    <div class="flex info">
+                        <div class="song-info"></div>   
+                        <div class="song-duration"></div>
+                    </div>
+                    
+                    <div class="song-btns ">
+                        <img id="previous" src="svg/previous.svg" alt="previous-btn" >
+                        <img id="play" src="svg/play.svg" alt="play-btn" >
+                        <img id="next" src="svg/next.svg" alt="next-btn" >
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div> 
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
