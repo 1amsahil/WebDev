@@ -67,23 +67,46 @@ nextSong = () =>
     }
 }
 
-// Main Function
-async function main()
+async function displayAlbums()
 {
-    songs = await getSongs("songs/Mix");
-    console.log("Playlist : Mix");
-    console.log("Song Name :",songs[0]);
-    
-    // metadata load
-    currentSong.src = `/Project_Spotify/${currFolder}/`+songs[0];
-    currentSong.preload = "metadata";
+    let link = await fetch(`http://127.0.0.1:3000/Project_Spotify/songs/`);
+    let response = await link.text();
 
-    document.querySelector(".song-info").innerHTML = `<label>${songs[0]}</label>`;
+    let div = document.createElement("div");
+    div.innerHTML = response;
     
+    let anchors = div.getElementsByTagName("a");
+    
+    let array = Array.from(anchors);
+    
+    for (let index = 0; index < array.length; index++) {    
+        const e = array[index];
+        
+        if(e.href.includes("/songs"))
+        {
+            let cardContainer = document.querySelector(".card-container");
+            
+            // Folder name
+            let folder = e.href.split("/").slice(-2)[0];
+
+            // Get Meta-Data of the folders
+            let a = await fetch(`http://127.0.0.1:3000/Project_Spotify/songs/${folder}/info.json`);
+            let response = await a.json();
+
+            cardContainer.innerHTML = cardContainer.innerHTML +`<div class="card" data-folder="${folder}">
+                            <img src="songs/${folder}/cover.jpg" alt="" class="thumbnail">
+                            <img class="thumbnail-play-btn " src="svg/playlistplay.svg" alt="play-btn">
+                            <h2><label>${response.title}</label></h2>
+                            <p><label>${response.description}</label></p>
+                        </div>`       
+        }
+    };
+
+
     // Add Event-Listener to PlayList
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async item => {
-            console.log("Playlist : ",item.currentTarget.dataset.folder);
+            console.log("Playlist : ",item.currentTarget.dataset.folder.replace("%20"," "));
 
             songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`);
 
@@ -122,6 +145,26 @@ async function main()
 
         })
     }) 
+
+    
+}
+
+// Main Function
+async function main()
+{
+    songs = await getSongs("songs/Mix");
+    console.log("Playlist : Mix");
+    console.log("Song Name :",songs[0]);
+
+    // Display All the Albums
+    displayAlbums();
+    
+    // metadata load
+    currentSong.src = `/Project_Spotify/${currFolder}/`+songs[0];
+    currentSong.preload = "metadata";
+
+    document.querySelector(".song-info").innerHTML = `<label>${songs[0]}</label>`;
+    
     
     // Showing all Songs in Playlist
     let songUL = document.querySelector(".song-list").getElementsByTagName("ul")[0];
@@ -151,7 +194,7 @@ async function main()
         })
     })
 
-    // song duration without play
+    // Song duration without play
     duration = currentSong.addEventListener("loadedmetadata",() => {
         console.log("Song Duration :",secondsToMinutes(currentSong.duration));
         document.querySelector(".song-duration").innerHTML = `<label>00:00 | ${secondsToMinutes(currentSong.duration)}</label>`;
@@ -212,31 +255,40 @@ async function main()
         nextSong();
     })
 
-    // Add an Event-Listener to create Volume-bar
-    document.querySelector(".volume-range").addEventListener("click", () => {
+    // Add an Event-Listener to Volume-bar
+    document.querySelector("#volume").addEventListener("click", (e) => {
 
-        document.querySelector(".volume-range").innerHTML = `<input id="volume" type="range" value="${volumeValue}" >${volumeValue}`;
-    })
-
-    // Add an Event-Listener to remove Volume-bar
-    document.querySelector(".volume-range").addEventListener("change", (e) => {
-                
         console.log("volume value : ",e.target.value);
-
+    
         volumeValue = parseInt(e.target.value);   
         currentSong.volume = volumeValue/100;
-    
-        document.querySelector(".volume-range").innerHTML = `<img class="playbar-btns" id="volume" src="svg/volume.svg" alt="volume-btn">`;
+        
+        var img = document.querySelector("#volume-img");
+        img.src = img.src.replace("mute.svg","volume.svg");
     })
-    document.querySelector(".playbar").addEventListener("dblclick", (e) => {
 
-        if(volumeValue == NaN)
+    // Add an Event-Listener to mute Volume
+    document.querySelector("#volume-img").addEventListener("click", (e) => {
+
+        if(e.target.src.includes("volume.svg"))
         {
-            currentSong.volume = parseInt(50);
-            volumeValue = currentSong.volume;
+            e.target.src = e.target.src.replace("volume.svg","mute.svg");
+            
+            volumeValue = 0;   
+            document.querySelector("#volume").value = volumeValue;
+            
+            currentSong.volume = volumeValue/100;
+        }
+        else
+        {
+            e.target.src = e.target.src.replace("mute.svg","volume.svg");
+            
+            volumeValue = 30;
+            document.querySelector("#volume").value = volumeValue;
+            
+            currentSong.volume = volumeValue/100;
         }
         
-        document.querySelector(".volume-range").innerHTML = `<img class="playbar-btns" id="volume" src="svg/volume.svg" alt="volume-btn">`;
     })
 
     // Song Timelaspe Event-Listener
