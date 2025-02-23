@@ -38,8 +38,30 @@ body
 
 .logo
 {
-    background-color: #4158D0;
+    align-items: center;
+
+
+    background-color: #000000;
     border-radius: 5px 5px 0px 0px ;
+}
+
+.logo img
+{
+    /* background-color: white; */
+    border-radius: 50%;
+
+    margin-left:15px ;
+    margin-right:15px ;
+}
+
+.first-half
+{
+    color: rgb(114, 189, 226);
+}
+
+.other-half
+{
+    color: rgb(126, 10, 155);
 }
 
 .home-icon, .search-icon
