@@ -10,7 +10,7 @@ async function getSongs(folder)
 {
     currFolder = folder;
     // Fetching Songs
-    let link = await fetch(`http://127.0.0.1:3000/Project_Spotify/${folder}`);
+    let link = await fetch(`http://127.0.0.1:3000/Project_MusicIn/${folder}`);
     
     let response = await link.text();
     
@@ -35,7 +35,7 @@ async function getSongs(folder)
 
 // Play Music function
 playMusic = (track)=>{
-    currentSong.src = `/Project_Spotify/${currFolder}/`+track;
+    currentSong.src = `/Project_MusicIn/${currFolder}/`+track;
     currentSong.play();
 
     document.querySelector(".song-info").innerHTML = `<label>${track}</label>`;
@@ -48,14 +48,14 @@ nextSong = () =>
 
     if(index == songs.length-1)
     {
-        currentSong.src = `/Project_Spotify/${currFolder}/`+songs[0];
+        currentSong.src = `/Project_MusicIn/${currFolder}/`+songs[0];
         currentSong.play();
 
         document.querySelector(".song-info").innerHTML = `<label>${songs[0]}</label>`;
     }
     else
     {
-        currentSong.src = `/Project_Spotify/${currFolder}/`+songs[index+1];
+        currentSong.src = `/Project_MusicIn/${currFolder}/`+songs[index+1];
         currentSong.play();
 
         document.querySelector(".song-info").innerHTML = `<label>${songs[index+1]}</label>`;
@@ -69,7 +69,7 @@ nextSong = () =>
 
 async function displayAlbums()
 {
-    let link = await fetch(`http://127.0.0.1:3000/Project_Spotify/songs/`);
+    let link = await fetch(`http://127.0.0.1:3000/Project_MusicIn/songs/`);
     let response = await link.text();
 
     let div = document.createElement("div");
@@ -90,7 +90,7 @@ async function displayAlbums()
             let folder = e.href.split("/").slice(-2)[0];
 
             // Get Meta-Data of the folders
-            let a = await fetch(`http://127.0.0.1:3000/Project_Spotify/songs/${folder}/info.json`);
+            let a = await fetch(`http://127.0.0.1:3000/Project_MusicIn/songs/${folder}/info.json`);
             let response = await a.json();
 
             cardContainer.innerHTML = cardContainer.innerHTML +`<div class="card" data-folder="${folder}">
@@ -141,7 +141,7 @@ async function displayAlbums()
             
             document.querySelector(".song-info").innerHTML = `<label>${songs[0]}</label>`;
             
-            currentSong.src = `/Project_Spotify/${currFolder}/`+songs[0];
+            currentSong.src = `/Project_MusicIn/${currFolder}/`+songs[0];
 
         })
     }) 
@@ -160,7 +160,7 @@ async function main()
     displayAlbums();
     
     // metadata load
-    currentSong.src = `/Project_Spotify/${currFolder}/`+songs[0];
+    currentSong.src = `/Project_MusicIn/${currFolder}/`+songs[0];
     currentSong.preload = "metadata";
 
     document.querySelector(".song-info").innerHTML = `<label>${songs[0]}</label>`;
@@ -231,14 +231,14 @@ async function main()
 
         if(index == 0)
         {
-            currentSong.src = `/Project_Spotify/${currFolder}/`+songs[songs.length-1];
+            currentSong.src = `/Project_MusicIn/${currFolder}/`+songs[songs.length-1];
             currentSong.play();
 
             document.querySelector(".song-info").innerHTML = `<label>${songs[songs.length-1]}</label>`;
         }
         else
         {
-            currentSong.src = `/Project_Spotify/${currFolder}/`+songs[index-1];
+            currentSong.src = `/Project_MusicIn/${currFolder}/`+songs[index-1];
             currentSong.play();
 
             document.querySelector(".song-info").innerHTML = `<label>${songs[index-1]}</label>`;
