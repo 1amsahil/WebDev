@@ -174,11 +174,11 @@ async function main()
     for(var s of songs)
     {
         songUL.innerHTML = songUL.innerHTML + `<li>
-                                <img src="svg/music.svg" class="invert" alt="">
+                                <img src="svg/music.svg" class="invert music-btn" alt="">
                                 <div class="song">
                                     <div>${s}</div>
                                 </div>
-                                <img src="svg/play.svg" class="invert play-btn" alt="">
+                                <img src="svg/play.svg" class="invert play-icon" alt="">
                             </li>`
     }
 
