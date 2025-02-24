@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
         <link rel="stylesheet" href="utility.css">
+        <link rel="stylesheet" href="responsive.css">
         <title>MusicIn</title>
 
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -18,6 +18,7 @@
             <!-- left side Structure -->
 
             <div class="left bg-black">
+                <div><img src="svg/cross.svg" class="invert cross" alt="cross"></div>
                 <div class="left-upper bg-grey rounded ">
                     <div class="logo flex">
                         <img src="img/logo without name.png" alt="logo" height="80px">
@@ -60,10 +61,11 @@
                 
                 <div class="right-header">
                     <div class="nav">
-                        <svg width="20px" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <img src="svg/hamburger.svg" class="invert hamburger" alt="hamburger" width="30px" >
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg width="20px" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
@@ -76,8 +78,8 @@
                 
                 <!-- Main Content  -->
                 
+                <h2 class="playlist-header"><label>MusicIn Playlist</label></h2>
                 <div class="musicin-playlist scrollbar">
-                    <h2> <label>MusicIn Playlist</label></h2>
                     
                     <div class="card-container">
 
@@ -123,7 +125,9 @@
                         <div class="volume-range">
                             <img class="" id="volume-img" src="svg/volume.svg" alt="volume-btn" >
                         </div>
-                        <input id="volume" type="range" value="50" >
+                        <span class=" volume-bar flex">
+                            <input id="volume" type="range" class="slider" value="50" >
+                        </span>
                     </div>
                     <div class="seekbar">
                         <div class="circle"></div>

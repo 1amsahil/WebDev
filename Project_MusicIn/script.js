@@ -1,3 +1,4 @@
+
 console.log("Javascript");
 
 let currentSong = new Audio;
@@ -215,6 +216,22 @@ async function main()
             play.src = "svg/play.svg";
         }
     })
+
+    // Add an Event-Listener to Hamburger
+    document.querySelector(".hamburger").addEventListener("click", e => {
+    document.querySelector(".left").style.left = "0";
+    })
+    // Add an Event-Listener to Remove Hamburger
+    document.querySelector(".cross").addEventListener("click", e => {
+        document.querySelector(".left").style.left = "-100%";
+    })
+    document.querySelector(".playlist-header").addEventListener("click", e => {
+        document.querySelector(".left").style.left = "-100%";
+    })
+    document.querySelector(".musicin-playlist").addEventListener("click", e => {
+        document.querySelector(".left").style.left = "-100%";
+    })
+
 
     // Add an Event-Listener to seekbar
     document.querySelector(".seekbar").addEventListener("click", e => {
